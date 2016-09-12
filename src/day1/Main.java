@@ -22,6 +22,6 @@ public class Main {
         String input = sc.nextLine();
         double f = Double.valueOf(input);
        double c = 5 * (f-32)/9;
-        System.err.println("Value in Celsius: " +c); 
+        System.err.print("Value in Celsius: " +c); 
     }
 }
