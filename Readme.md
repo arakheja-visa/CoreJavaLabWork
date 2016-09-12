@@ -1,1 +1,2 @@
-1st Day Exercise: src\Main.java
+Core Java Bootcamp
+
