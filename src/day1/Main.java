@@ -1,3 +1,5 @@
+package day1;
+
 
 import java.util.Scanner;
 
@@ -15,7 +17,7 @@ public class Main {
     
  double f =0;
     public static void main(String[] args) {
-        System.out.println("Please enter the temperature in Fahrenhite..");
+        System.out.print("Please enter the temperature in Fahrenhite..");
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         double f = Double.valueOf(input);
