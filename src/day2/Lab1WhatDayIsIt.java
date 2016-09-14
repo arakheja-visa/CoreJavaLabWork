@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  * @author arakheja
  */
-public class Lab1 {
+public class Lab1WhatDayIsIt {
      public static void main(String[] args) {
         String delims;
         String[] date;
