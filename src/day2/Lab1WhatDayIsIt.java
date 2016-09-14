@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class Lab1WhatDayIsIt {
      public static void main(String[] args) {
-        String delims;
+        String delims, resultDay = null;
         String[] date;
         int  a, b, c, d, result, mm, dd, yy;
         boolean timeToQuit = false;
@@ -30,12 +30,28 @@ public class Lab1WhatDayIsIt {
                 mm += 12;
                 yy -= 1;
             }
-            a = (int)(13 * ((mm +1)/5));
+            a = (int)(13 * (mm +1)/5);
             b = (int)(yy/4);
-            c = (int)(6*(int)(yy/100));
+            c = (int)(6* (yy/100));
             d = (int)(yy/400);
             result = (a+b+c+d+yy+dd)%7;
-            System.out.println(result);
+            switch(result){
+                case 0: resultDay = "Saturday";
+                break;
+                case 1: resultDay = "Sunday";
+                break;
+                case 2: resultDay = "Monday";
+                break;
+                case 3: resultDay = "Tuesday";
+                break;
+                case 4: resultDay = "Wednesday";
+                break;
+                case 5: resultDay = "Thursday";
+                break;
+                case 6: resultDay = "Friday";
+                break;
+            }
+            System.out.println(resultDay);
             System.out.print("Please enter the date in MM-DD-YYYY format or to stop enter 'quit' ");
             input = sc.next();
             timeToQuit = "quit".equalsIgnoreCase(input);
